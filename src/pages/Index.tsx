@@ -14,36 +14,58 @@ import BookingDialog from '@/components/BookingDialog';
 const quests: Quest[] = [
   {
     id: 1,
-    title: 'КОЛЛЕКЦИОНЕР',
-    description: 'Психологический триллер с культовой падающей ловушкой. Погрузитесь в мир маньяка, который коллекционирует людей.',
-    image: 'https://cdn.poehali.dev/projects/9fa2ebd3-9d24-408e-9aca-5269590b6d32/files/8dabdc6f-d95e-4ae3-8380-61480a7939e2.jpg',
+    title: 'ЗАКЛЯТИЕ',
+    description: '- Ты увидела здесь что-нибудь, да?\n- Здесь произошло что-то ужасное, Эд',
+    image: 'https://cdn.poehali.dev/projects/9fa2ebd3-9d24-408e-9aca-5269590b6d32/files/f41054fe-0bfc-4cc7-944b-43ae490c474c.jpg',
     duration: '60 минут',
-    players: '2-6 человек',
+    players: '1-12 человек',
     difficulty: 'Сложный',
     tags: ['friends', 'photo', 'team'],
-    price: 3500
+    price: 5000
   },
   {
     id: 2,
-    title: 'МЕХАНИЗМ',
-    description: 'Инженерный ад с движущимися стенами и падающими потолками. Уникальные механики, которых нет у других.',
-    image: 'https://cdn.poehali.dev/projects/9fa2ebd3-9d24-408e-9aca-5269590b6d32/files/37b35d2e-b39d-43a6-a035-9d6471b81d4d.jpg',
+    title: 'AMNESIA',
+    description: 'Запусти запись — и дверь в кошмар откроется...',
+    image: 'https://cdn.poehali.dev/projects/9fa2ebd3-9d24-408e-9aca-5269590b6d32/files/be7dabae-deff-4ce0-a51a-bec94bcaf1d7.jpg',
     duration: '60 минут',
-    players: '4-8 человек',
+    players: '1-10 человек',
     difficulty: 'Экстремальный',
-    tags: ['team', 'photo'],
-    price: 4500
+    tags: ['friends', 'photo'],
+    price: 5000
   },
   {
     id: 3,
-    title: 'ТЁМНЫЙ РИТУАЛ',
-    description: 'Хоррор с живыми актёрами. Почувствуйте настоящий страх под контролем профессионалов.',
-    image: 'https://cdn.poehali.dev/projects/9fa2ebd3-9d24-408e-9aca-5269590b6d32/files/dc523440-50ac-4456-abdc-844fa2fb8c94.jpg',
-    duration: '70 минут',
-    players: '2-5 человек',
+    title: 'КОЛЛЕКЦИОНЕР',
+    description: 'Переступив через порог, пути назад уже не будет',
+    image: 'https://cdn.poehali.dev/projects/9fa2ebd3-9d24-408e-9aca-5269590b6d32/files/8dabdc6f-d95e-4ae3-8380-61480a7939e2.jpg',
+    duration: '60 минут',
+    players: '1-10 человек',
+    difficulty: 'Сложный',
+    tags: ['friends', 'photo', 'team'],
+    price: 5000
+  },
+  {
+    id: 4,
+    title: 'SILENT HILL',
+    description: 'Город зовёт... Но готов ли ты?',
+    image: 'https://cdn.poehali.dev/projects/9fa2ebd3-9d24-408e-9aca-5269590b6d32/files/208d12d1-28a2-4961-8e58-e0ffb31ed701.jpg',
+    duration: '60 минут',
+    players: '1-15 человек',
     difficulty: 'Средний',
-    tags: ['friends', 'photo'],
-    price: 4000
+    tags: ['friends', 'photo', 'team'],
+    price: 5000
+  },
+  {
+    id: 5,
+    title: 'OUTLAST',
+    description: 'Единственный способ выжить – это прятаться или бежать',
+    image: 'https://cdn.poehali.dev/projects/9fa2ebd3-9d24-408e-9aca-5269590b6d32/files/78c74dc5-b684-473a-bca9-7100ccc93022.jpg',
+    duration: '60 минут',
+    players: '1-15 человек',
+    difficulty: 'Экстремальный',
+    tags: ['friends', 'photo', 'team'],
+    price: 5000
   }
 ];
 

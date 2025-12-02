@@ -102,8 +102,8 @@ export default function QuestsCatalog({ filter, setFilter, quests, onBookQuest }
 
                 <div className="flex items-center justify-between">
                   <div>
+                    <span className="text-xl text-muted-foreground">от </span>
                     <span className="text-3xl font-bold text-primary">{quest.price}₽</span>
-                    <span className="text-sm text-muted-foreground ml-2">за команду</span>
                   </div>
                 </div>
 

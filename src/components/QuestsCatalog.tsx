@@ -70,22 +70,23 @@ export default function QuestsCatalog({ filter, setFilter, quests, onBookQuest }
 
         <div className="grid md:grid-cols-3 gap-8">
           {filteredQuests.map((quest) => (
-            <Card key={quest.id} className="overflow-hidden bg-card border-primary/20 hover-lift group">
+            <Card key={quest.id} className="overflow-hidden bg-card border-2 border-primary/30 hover-lift group relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={quest.image} 
                   alt={quest.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 grayscale group-hover:grayscale-0"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                <Badge className="absolute top-4 right-4 bg-secondary text-white">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                <Badge className="absolute top-4 right-4 bg-primary/90 text-white border-2 border-primary font-bold" style={{ fontFamily: 'Bebas Neue, sans-serif' }}>
                   {quest.difficulty}
                 </Badge>
               </div>
               
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-primary">{quest.title}</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+              <div className="p-6 relative">
+                <h3 className="text-2xl font-bold mb-3 text-primary" style={{ fontFamily: 'Creepster, system-ui', textShadow: '2px 2px 0 rgba(139, 0, 0, 0.3)' }}>{quest.title}</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed" style={{ fontFamily: 'Special Elite, serif' }}>
                   {quest.description}
                 </p>
                 
@@ -108,11 +109,12 @@ export default function QuestsCatalog({ filter, setFilter, quests, onBookQuest }
                 </div>
 
                 <Button 
-                  className="w-full mt-6 bg-primary hover:bg-primary/90 text-white font-bold uppercase"
+                  className="w-full mt-6 bg-primary hover:bg-primary/90 text-white font-bold uppercase border-2 border-primary/50 hover:border-primary transition-all"
                   onClick={() => onBookQuest(quest)}
+                  style={{ fontFamily: 'Bebas Neue, sans-serif', letterSpacing: '0.1em' }}
                 >
-                  ЗАБРОНИРОВАТЬ
-                  <Icon name="Calendar" className="ml-2" size={18} />
+                  ВОЙТИ В КОШМАР
+                  <Icon name="Skull" className="ml-2" size={18} />
                 </Button>
               </div>
             </Card>

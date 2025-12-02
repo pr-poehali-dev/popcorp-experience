@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&family=Bebas+Neue&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,35 +6,35 @@
 
 @layer base {
   :root {
-    --background: 220 20% 10%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
 
-    --card: 220 18% 15%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 18% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 4 90% 58%;
+    --primary: 0 85% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 22 95% 55%;
+    --secondary: 15 80% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 25%;
-    --muted-foreground: 220 10% 70%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 4 90% 58%;
+    --accent: 0 85% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 25%;
-    --input: 220 18% 20%;
-    --ring: 4 90% 58%;
+    --border: 0 0% 18%;
+    --input: 0 0% 12%;
+    --ring: 0 85% 45%;
 
-    --radius: 0.25rem;
+    --radius: 0rem;
   }
 }
 
@@ -45,19 +45,35 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Special Elite", serif;
+    background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.3) 2px,
+      rgba(0, 0, 0, 0.3) 4px
+    );
   }
 
   h1,
   h2,
-  h3,
+  h3 {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow:
+      3px 3px 0 rgba(139, 0, 0, 0.5),
+      6px 6px 0 rgba(0, 0, 0, 0.3);
+  }
+
   h4,
   h5,
   h6 {
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.08em;
   }
 }
 
@@ -83,6 +99,51 @@
 
   .hover-lift:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(234, 56, 76, 0.3);
+    box-shadow:
+      0 25px 50px rgba(139, 0, 0, 0.6),
+      0 0 30px rgba(139, 0, 0, 0.3);
+  }
+
+  .blood-drip {
+    position: relative;
+  }
+
+  .blood-drip::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 4px;
+    height: 15px;
+    background: linear-gradient(to bottom, rgba(139, 0, 0, 0.8), transparent);
+    border-radius: 0 0 50% 50%;
+  }
+
+  .glitch {
+    animation: glitch 3s infinite;
+  }
+
+  @keyframes glitch {
+    0%,
+    100% {
+      text-shadow:
+        3px 3px 0 rgba(139, 0, 0, 0.5),
+        6px 6px 0 rgba(0, 0, 0, 0.3);
+    }
+    25% {
+      text-shadow:
+        -2px 2px 0 rgba(139, 0, 0, 0.7),
+        4px -2px 0 rgba(0, 0, 0, 0.4);
+    }
+    50% {
+      text-shadow:
+        2px -2px 0 rgba(139, 0, 0, 0.6),
+        -4px 4px 0 rgba(0, 0, 0, 0.3);
+    }
+    75% {
+      text-shadow:
+        -3px -3px 0 rgba(139, 0, 0, 0.5),
+        3px 3px 0 rgba(0, 0, 0, 0.4);
+    }
   }
 }

@@ -4,14 +4,6 @@ import Icon from '@/components/ui/icon';
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute top-8 left-8 z-20">
-        <img 
-          src="https://cdn.poehali.dev/projects/9fa2ebd3-9d24-408e-9aca-5269590b6d32/files/ba3dc5ae-b2ef-423c-b584-757af051c43a.jpg" 
-          alt="PopCorp Logo" 
-          className="h-16 md:h-20 w-auto drop-shadow-[0_0_15px_rgba(139,0,0,0.8)]"
-        />
-      </div>
-
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{

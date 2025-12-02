@@ -280,11 +280,7 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/9fa2ebd3-9d24-408e-9aca-5269590b6d32/files/ba3dc5ae-b2ef-423c-b584-757af051c43a.jpg" 
-                alt="PopCorp Logo" 
-                className="h-12 w-auto mb-4 drop-shadow-[0_0_10px_rgba(139,0,0,0.6)]"
-              />
+              <h3 className="text-2xl font-bold text-primary mb-4">POPCORP</h3>
               <p className="text-muted-foreground" style={{ fontFamily: 'Special Elite, serif' }}>
                 Технологичный хоррор с человеческим лицом
               </p>

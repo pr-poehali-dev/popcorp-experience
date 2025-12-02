@@ -47,10 +47,7 @@ export default function HeroSection() {
           className="bg-primary hover:bg-primary/90 text-white text-xl px-12 py-6 h-auto font-bold uppercase tracking-wider transform hover:scale-110 transition-all duration-300 animate-pulse-glow border-2 border-primary/50"
           onClick={() => document.getElementById('quests')?.scrollIntoView({ behavior: 'smooth' })}
           style={{ fontFamily: 'Bebas Neue, sans-serif' }}
-        >
-          ВОЙТИ В КОШМАР
-          <Icon name="Skull" className="ml-3" size={24} />
-        </Button>
+        >выбрать свою историю</Button>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-primary">
